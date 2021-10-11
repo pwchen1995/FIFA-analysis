@@ -1,0 +1,41 @@
+{
+  "name": "code-ch18-eb",
+  "version": "1.0.0",
+  "description": "Testing instructions for deployment to EB",
+  "main": "server.compiled.js",
+  "scripts": {
+    "start": "node server.compiled.js",
+    "build": "babel server.js --out-file server.compiled.js",
+    "dev": "nodemon --exec node server.compiled.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C Hundhausen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "d3": "^6.3.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "fs-react": "0.0.4",
+    "mongoose": "^5.10.9",
+    "papaparse": "^5.3.0",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "react-csv-reader": "^3.1.1",
+    "react-data-table-component": "^6.11.6",
+    "react-papaparse": "^3.11.0",
+    "react-query": "^2.26.3",
+    "regenerator-runtime": "^0.13.7",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "nodemon": "^2.0.5"
+  }
+}
